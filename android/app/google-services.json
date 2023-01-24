@@ -37,6 +37,13 @@
             {
               "client_id": "32486607993-q61gb45sochbo1dusjgmgf7ungg7d5cv.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "32486607993-a2798h9mcbqq2ailralcou0f7kmkovhq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.massimilianoporzio.hostGroupChat"
+              }
             }
           ]
         }
