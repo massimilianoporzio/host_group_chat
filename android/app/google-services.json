@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "32486607993",
+    "project_id": "group-chat-f0b65",
+    "storage_bucket": "group-chat-f0b65.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32486607993:android:aee520011e2153dd8858a8",
+        "android_client_info": {
+          "package_name": "com.massimilianoporzio.group_host_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "32486607993-a9mm4gun8d4a6n2qsvsmelmoab8k7p6v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.massimilianoporzio.group_host_chat",
+            "certificate_hash": "4339f23512dc88320bf3ba9f6597c42b521aa891"
+          }
+        },
+        {
+          "client_id": "32486607993-q61gb45sochbo1dusjgmgf7ungg7d5cv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCd22egJgjj_IiX54WLkRV8bk5sv1YOG3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "32486607993-q61gb45sochbo1dusjgmgf7ungg7d5cv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
