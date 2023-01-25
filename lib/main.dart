@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:host_group_chat/features/presentation/pages/login_page.dart';
 import 'package:host_group_chat/features/presentation/widgets/theme/style.dart';
 import 'package:host_group_chat/on_generate_route.dart';
@@ -21,7 +22,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Group Chat',
-      theme: ThemeData(primarySwatch: Colors.green),
+      theme: ThemeData(
+          primarySwatch: Palette.kToDark,
+          textTheme: GoogleFonts.bitterTextTheme()),
       initialRoute: "/",
       onGenerateRoute: OnGenerateRoute.route,
       routes: {
