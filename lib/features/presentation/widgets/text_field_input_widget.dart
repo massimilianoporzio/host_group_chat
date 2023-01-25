@@ -26,7 +26,10 @@ class TextFieldInputWidget extends StatelessWidget {
         style: const TextStyle(color: Colors.white, fontSize: 20),
         decoration: InputDecoration(
           border: InputBorder.none,
-          prefixIcon: Icon(prefixIcon),
+          prefixIcon: Icon(
+            prefixIcon,
+            color: Theme.of(context).primaryColor,
+          ),
         ),
       ),
     );

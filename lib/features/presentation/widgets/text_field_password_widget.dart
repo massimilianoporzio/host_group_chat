@@ -53,6 +53,7 @@ class _TextFieldPasswordWidgetState extends State<TextFieldPasswordWidget> {
                 _isTextObscured
                     ? Icons.visibility
                     : MaterialIcons.visibility_off,
+                color: Theme.of(context).primaryColor,
               )),
         ),
       ),

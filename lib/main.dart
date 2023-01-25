@@ -23,7 +23,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Group Chat',
       theme: ThemeData(
-          primarySwatch: Palette.kToDark,
+          useMaterial3: true,
+          colorSchemeSeed: Palette.kToDark,
           textTheme: GoogleFonts.bitterTextTheme()),
       initialRoute: "/",
       onGenerateRoute: OnGenerateRoute.route,
