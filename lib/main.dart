@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:host_group_chat/features/presentation/pages/login_page.dart';
+import 'package:host_group_chat/features/presentation/widgets/theme/style.dart';
+import 'package:host_group_chat/on_generate_route.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -18,14 +21,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Group Chat',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Material App bar'),
-        ),
-        body: const Center(
-          child: Text('Hello World'),
-        ),
-      ),
+      theme: ThemeData(primarySwatch: Colors.green),
+      initialRoute: "/",
+      onGenerateRoute: OnGenerateRoute.route,
+      routes: {
+        "/": (context) {
+          return const LoginPage();
+        }
+      },
     );
   }
 }
