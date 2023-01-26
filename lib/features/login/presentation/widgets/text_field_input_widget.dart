@@ -21,6 +21,7 @@ class TextFieldInputWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
       ),
       child: TextField(
+        textAlignVertical: TextAlignVertical.center,
         keyboardType: keyboardType,
         controller: controller,
         style: const TextStyle(color: Colors.white, fontSize: 20),

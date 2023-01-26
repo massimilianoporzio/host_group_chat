@@ -41,6 +41,8 @@ dependencies:
     sdk: flutter
   flutter_bloc: ^8.1.1
   flutter_icons_null_safety: ^1.1.0
+  flutter_signin_button: ^2.0.0
+  flutter_social_button: ^1.1.4
   flutter_svg: ^1.1.6
   fluttertoast: ^8.1.2
   get_it: ^7.2.0
