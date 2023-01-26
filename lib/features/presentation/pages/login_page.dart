@@ -39,6 +39,10 @@ class _LoginPageState extends State<LoginPage> {
               padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 80),
               child: Column(
                 children: [
+                  SizedBox(
+                    height: 64,
+                    child: Image.asset('assets/images/logo.png'),
+                  ),
                   const HeaderWidget(
                     title: 'Login',
                   ),
