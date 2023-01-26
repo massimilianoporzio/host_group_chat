@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:host_group_chat/features/login/presentation/pages/forgot_password_page.dart';
 import 'package:host_group_chat/features/login/presentation/pages/login_page.dart';
 import 'package:host_group_chat/core/presentation/theme/style.dart';
 import 'package:host_group_chat/on_generate_route.dart';
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
       onGenerateRoute: OnGenerateRoute.route,
       routes: {
         "/": (context) {
+          // return const ForgotPasswordPage();
           return const LoginPage();
         }
       },

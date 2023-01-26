@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:host_group_chat/features/login/presentation/pages/forgot_password_page.dart';
 import 'package:host_group_chat/features/login/presentation/pages/login_page.dart';
 
 class OnGenerateRoute {
   static Route<dynamic> route(RouteSettings settings) {
     final args = settings.arguments;
     switch (settings.name) {
+      case ForgotPasswordPage.routeName:
+        return materialBuilder(widget: const ForgotPasswordPage());
       case "/":
         return materialBuilder(widget: const LoginPage());
       default:

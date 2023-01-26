@@ -5,7 +5,9 @@ import '../theme/style.dart';
 
 class HeaderWidget extends StatelessWidget {
   final String title;
-  const HeaderWidget({super.key, required this.title});
+  final double? fontSize;
+
+  const HeaderWidget({super.key, required this.title, this.fontSize = 40});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +22,7 @@ class HeaderWidget extends StatelessWidget {
             title,
             style: GoogleFonts.bitter(
                 color: Palette.kToDark,
-                fontSize: 40,
+                fontSize: fontSize,
                 fontWeight: FontWeight.w600),
           ),
         ),

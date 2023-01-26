@@ -3,11 +3,13 @@ import 'package:flutter/material.dart';
 class ContainerButtonWidget extends StatelessWidget {
   final String text;
   final VoidCallback? onTap;
+  final double? fontSize;
 
   const ContainerButtonWidget({
     super.key,
     required this.text,
     this.onTap,
+    this.fontSize = 16,
   });
 
   @override
@@ -24,9 +26,9 @@ class ContainerButtonWidget extends StatelessWidget {
         ),
         child: Text(
           text,
-          style: const TextStyle(
+          style: TextStyle(
             color: Colors.white,
-            fontSize: 16,
+            fontSize: fontSize,
             fontWeight: FontWeight.w600,
           ),
         ),

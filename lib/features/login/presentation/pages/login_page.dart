@@ -6,13 +6,16 @@ import 'package:flutter_social_button/flutter_social_button.dart';
 import 'package:host_group_chat/core/presentation/theme/style.dart';
 import 'package:host_group_chat/core/presentation/widgets/background_widget.dart';
 import 'package:host_group_chat/core/presentation/widgets/container_button_widget.dart';
+import 'package:host_group_chat/features/login/presentation/pages/forgot_password_page.dart';
 import 'package:host_group_chat/features/login/presentation/widgets/forogt_password_widget.dart';
 import 'package:host_group_chat/features/login/presentation/widgets/text_field_input_widget.dart';
 import 'package:host_group_chat/features/login/presentation/widgets/text_field_password_widget.dart';
 
+import '../../../../core/presentation/widgets/auth_row_widget.dart';
 import '../../../../core/presentation/widgets/header_widget.dart';
 
 class LoginPage extends StatefulWidget {
+  static const String routeName = "/";
   const LoginPage({super.key});
 
   @override
@@ -73,15 +76,22 @@ class _LoginPageState extends State<LoginPage> {
                   ContainerButtonWidget(
                     text: "Login",
                     onTap: () {
-                      print("hello login button");
+                      //TODO login con email e password
                     },
                   ),
                   const SizedBox(
                     height: 10,
                   ),
-                  _rowTextWidget(),
+                  AuthRowWidget(
+                    fontSize: 16,
+                    firstText: "Non hai un account? ",
+                    secondText: "Registrati",
+                    onTap: () {
+                      //TODO naviga alla pagina di registrazione
+                    },
+                  ),
                   const SizedBox(
-                    height: 20,
+                    height: 30,
                   ),
                   FlutterSocialButton(
                     onTap: () {
@@ -95,28 +105,5 @@ class _LoginPageState extends State<LoginPage> {
             ),
           ),
         ));
-  }
-
-  Widget _rowTextWidget() {
-    return Row(
-      children: [
-        const Text(
-          "Don't have an account? ",
-          style: TextStyle(color: Colors.white, fontSize: 14),
-        ),
-        InkWell(
-          onTap: () {
-            //TODO google login
-          },
-          child: const Text(
-            "Register",
-            style: TextStyle(
-                color: Palette.kToDark,
-                fontWeight: FontWeight.w700,
-                fontSize: 14),
-          ),
-        ),
-      ],
-    );
   }
 }
