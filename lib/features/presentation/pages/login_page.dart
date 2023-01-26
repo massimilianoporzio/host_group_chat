@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons_null_safety/flutter_icons_null_safety.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:host_group_chat/features/presentation/widgets/background_widget.dart';
 import 'package:host_group_chat/features/presentation/widgets/text_field_input_widget.dart';
@@ -40,7 +41,7 @@ class _LoginPageState extends State<LoginPage> {
               child: Column(
                 children: [
                   SizedBox(
-                    height: 64,
+                    height: 128,
                     child: Image.asset('assets/images/logo.png'),
                   ),
                   const HeaderWidget(
