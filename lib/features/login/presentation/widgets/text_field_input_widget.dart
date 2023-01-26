@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:host_group_chat/features/presentation/widgets/theme/style.dart';
+import 'package:host_group_chat/core/presentation/theme/style.dart';
 
 class TextFieldInputWidget extends StatelessWidget {
   final TextEditingController controller;

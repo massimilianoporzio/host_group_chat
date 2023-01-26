@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons_null_safety/flutter_icons_null_safety.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:host_group_chat/features/presentation/widgets/background_widget.dart';
-import 'package:host_group_chat/features/presentation/widgets/text_field_input_widget.dart';
-import 'package:host_group_chat/features/presentation/widgets/text_field_password_widget.dart';
-import 'package:host_group_chat/features/presentation/widgets/theme/style.dart';
+import 'package:host_group_chat/core/presentation/widgets/background_widget.dart';
+import 'package:host_group_chat/features/login/presentation/widgets/text_field_input_widget.dart';
+import 'package:host_group_chat/features/login/presentation/widgets/text_field_password_widget.dart';
 
-import '../widgets/header_widget.dart';
+import '../../../../core/presentation/widgets/header_widget.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons_null_safety/flutter_icons_null_safety.dart';
-import 'package:host_group_chat/features/presentation/widgets/theme/style.dart';
+import 'package:host_group_chat/core/presentation/theme/style.dart';
 
 class TextFieldPasswordWidget extends StatefulWidget {
   final TextEditingController controller;
