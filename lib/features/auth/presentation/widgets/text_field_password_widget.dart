@@ -7,6 +7,7 @@ class TextFieldPasswordWidget extends StatefulWidget {
   final IconData? prefixIcon;
   final IconData? suffixIcon;
   final TextInputType? keyboardType;
+  final String? hintText;
 
   const TextFieldPasswordWidget({
     super.key,
@@ -14,6 +15,7 @@ class TextFieldPasswordWidget extends StatefulWidget {
     this.prefixIcon,
     this.keyboardType,
     this.suffixIcon,
+    this.hintText,
   });
 
   @override
@@ -38,6 +40,7 @@ class _TextFieldPasswordWidgetState extends State<TextFieldPasswordWidget> {
         controller: widget.controller,
         style: const TextStyle(color: Colors.white, fontSize: 20),
         decoration: InputDecoration(
+          hintText: widget.hintText,
           border: InputBorder.none,
           prefixIcon: Icon(
             widget.prefixIcon,

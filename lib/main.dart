@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'conf/firebase_options.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:host_group_chat/features/login/presentation/pages/forgot_password_page.dart';
-import 'package:host_group_chat/features/login/presentation/pages/login_page.dart';
+
+import 'package:host_group_chat/features/auth/presentation/pages/login_page.dart';
 import 'package:host_group_chat/core/presentation/theme/style.dart';
-import 'package:host_group_chat/on_generate_route.dart';
-import 'firebase_options.dart';
+import 'package:host_group_chat/routes/on_generate_route.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
