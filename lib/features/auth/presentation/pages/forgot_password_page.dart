@@ -3,13 +3,12 @@ import 'package:host_group_chat/core/constants.dart';
 import 'package:host_group_chat/core/presentation/widgets/auth_row_widget.dart';
 import 'package:host_group_chat/core/presentation/widgets/background_widget.dart';
 import 'package:host_group_chat/core/presentation/widgets/container_button_widget.dart';
-import 'package:host_group_chat/features/login/presentation/pages/login_page.dart';
-import 'package:host_group_chat/features/login/presentation/widgets/text_field_input_widget.dart';
+import 'package:host_group_chat/features/auth/presentation/pages/login_page.dart';
+import 'package:host_group_chat/features/auth/presentation/widgets/text_field_input_widget.dart';
 
 import '../../../../core/presentation/widgets/header_widget.dart';
 
 class ForgotPasswordPage extends StatefulWidget {
-  static const routeName = "/forgotPassword";
   const ForgotPasswordPage({super.key});
 
   @override
@@ -81,7 +80,8 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                     secondText: "Login",
                     fontSize: 16,
                     onTap: () {
-                      Navigator.of(context).pushNamed(LoginPage.routeName);
+                      Navigator.of(context)
+                          .pushNamed(PageConst.loginPageRouteName);
                     },
                   )
                 ],

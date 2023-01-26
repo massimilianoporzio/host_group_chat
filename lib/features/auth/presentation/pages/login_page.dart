@@ -1,21 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons_null_safety/flutter_icons_null_safety.dart';
-import 'package:flutter_signin_button/button_list.dart';
-import 'package:flutter_signin_button/button_view.dart';
+
 import 'package:flutter_social_button/flutter_social_button.dart';
-import 'package:host_group_chat/core/presentation/theme/style.dart';
+
 import 'package:host_group_chat/core/presentation/widgets/background_widget.dart';
 import 'package:host_group_chat/core/presentation/widgets/container_button_widget.dart';
-import 'package:host_group_chat/features/login/presentation/pages/forgot_password_page.dart';
-import 'package:host_group_chat/features/login/presentation/widgets/forogt_password_widget.dart';
-import 'package:host_group_chat/features/login/presentation/widgets/text_field_input_widget.dart';
-import 'package:host_group_chat/features/login/presentation/widgets/text_field_password_widget.dart';
+
+import 'package:host_group_chat/features/auth/presentation/widgets/forogt_password_widget.dart';
+import 'package:host_group_chat/features/auth/presentation/widgets/text_field_input_widget.dart';
+import 'package:host_group_chat/features/auth/presentation/widgets/text_field_password_widget.dart';
 
 import '../../../../core/presentation/widgets/auth_row_widget.dart';
 import '../../../../core/presentation/widgets/header_widget.dart';
 
 class LoginPage extends StatefulWidget {
-  static const String routeName = "/";
   const LoginPage({super.key});
 
   @override

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:host_group_chat/core/constants.dart';
 import 'package:host_group_chat/core/extensions/string_extension.dart';
-
-import '../../../../core/presentation/theme/style.dart';
-import '../pages/forgot_password_page.dart';
 
 class ForgotPasswordWidget extends StatelessWidget {
   const ForgotPasswordWidget({super.key});
@@ -11,7 +9,7 @@ class ForgotPasswordWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.of(context).pushNamed(ForgotPasswordPage.routeName);
+        Navigator.of(context).pushNamed(PageConst.forgotPageRouteName);
       },
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
