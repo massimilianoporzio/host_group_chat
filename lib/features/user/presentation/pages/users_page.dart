@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:host_group_chat/core/constants.dart';
-import 'package:host_group_chat/features/chat/presentation/widgets/single_item_group_widget.dart';
+import 'package:host_group_chat/features/user/presentation/widgets/single_item_user_widget.dart';
 
-class GroupsPage extends StatelessWidget {
-  const GroupsPage({super.key});
+class UsersPage extends StatelessWidget {
+  const UsersPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +14,7 @@ class GroupsPage extends StatelessWidget {
             child: ListView.builder(
               itemCount: 10,
               itemBuilder: (context, index) {
-                return SingleItemGroupWidget(
+                return SingleItemUserWidget(
                   onTap: () {},
                 );
               },

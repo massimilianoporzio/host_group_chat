@@ -10,4 +10,5 @@ class PageConst {
   static const String forgotPageRouteName = "/forgotPassword";
   static const String loginPageRouteName = "/loginPage";
   static const String registerPageRouteName = "/registerPage";
+  static const String createNewGroupRouteName = "/createNewGroupPage";
 }

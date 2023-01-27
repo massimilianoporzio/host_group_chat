@@ -3,8 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:host_group_chat/core/constants.dart';
 import 'package:host_group_chat/core/presentation/theme/style.dart';
 import 'package:host_group_chat/core/presentation/widgets/background_widget.dart';
-import 'package:host_group_chat/features/chat/presentation/pages/groups_page.dart';
-import 'package:host_group_chat/features/chat/presentation/pages/users_page.dart';
+import 'package:host_group_chat/features/groups/presentation/pages/groups_page.dart';
+import 'package:host_group_chat/features/user/presentation/pages/users_page.dart';
 import 'package:host_group_chat/features/chat/presentation/widgets/custom_toolbar_widget.dart';
 import 'package:host_group_chat/features/user/presentation/pages/profile_page.dart';
 
