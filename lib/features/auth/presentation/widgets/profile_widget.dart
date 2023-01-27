@@ -1,9 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:host_group_chat/core/extensions/string_extension.dart';
-import 'package:host_group_chat/features/auth/presentation/widgets/text_field_input_widget.dart';
-import 'package:host_group_chat/features/auth/presentation/widgets/text_field_password_widget.dart';
-
-import '../../../../core/presentation/theme/style.dart';
 
 class ProfileWidget extends StatefulWidget {
   final double? radius;

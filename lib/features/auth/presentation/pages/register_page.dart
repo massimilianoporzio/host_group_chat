@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:host_group_chat/core/constants.dart';
-import 'package:host_group_chat/core/extensions/string_extension.dart';
+import 'package:host_group_chat/core/extensions/textstyle_extension.dart';
 import 'package:host_group_chat/features/auth/presentation/widgets/auth_row_widget.dart';
 import 'package:host_group_chat/core/presentation/widgets/background_widget.dart';
 import 'package:host_group_chat/core/presentation/widgets/container_button_widget.dart';
