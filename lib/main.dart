@@ -3,10 +3,10 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:host_group_chat/features/chat/presentation/pages/home_page.dart';
 import 'conf/firebase_options.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-import 'package:host_group_chat/features/auth/presentation/pages/login_page.dart';
 import 'package:host_group_chat/core/presentation/theme/style.dart';
 import 'package:host_group_chat/routes/on_generate_route.dart';
+
+import 'features/auth/presentation/pages/login_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
