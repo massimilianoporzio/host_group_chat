@@ -8,6 +8,10 @@ class TextFieldInputWidget extends StatelessWidget {
   final String? hintText;
   final double? height;
   final double? fontSize;
+  final double? borderRadius;
+  final Color? backgroundColor;
+  final Color? hintColor;
+  final VoidCallback? iconClickEvent;
 
   const TextFieldInputWidget({
     super.key,
@@ -17,6 +21,10 @@ class TextFieldInputWidget extends StatelessWidget {
     this.hintText,
     this.height = 50,
     this.fontSize = 20,
+    this.borderRadius,
+    this.backgroundColor,
+    this.iconClickEvent,
+    this.hintColor,
   });
 
   @override
@@ -25,7 +33,7 @@ class TextFieldInputWidget extends StatelessWidget {
       alignment: Alignment.bottomCenter,
       height: height,
       decoration: BoxDecoration(
-        color: color747480.withOpacity(.9),
+        color: backgroundColor ?? color747480.withOpacity(.9),
         borderRadius: BorderRadius.circular(10),
       ),
       child: Align(
@@ -36,12 +44,15 @@ class TextFieldInputWidget extends StatelessWidget {
           controller: controller,
           style: TextStyle(color: Colors.white, fontSize: fontSize),
           decoration: InputDecoration(
-            hintStyle: TextStyle(fontSize: fontSize),
+            hintStyle: TextStyle(fontSize: fontSize, color: hintColor),
             border: InputBorder.none,
             hintText: hintText,
-            prefixIcon: Icon(
-              prefixIcon,
-              color: Theme.of(context).primaryColor,
+            prefixIcon: InkWell(
+              onTap: iconClickEvent,
+              child: Icon(
+                prefixIcon,
+                color: Theme.of(context).primaryColor,
+              ),
             ),
           ),
         ),

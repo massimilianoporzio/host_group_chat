@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:host_group_chat/features/chat/presentation/pages/home_page.dart';
 import 'conf/firebase_options.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -24,15 +25,18 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Group Chat',
       theme: ThemeData(
+          primaryColor: Palette.kToDark,
           useMaterial3: true,
-          colorSchemeSeed: Palette.kToDark,
+          colorScheme: ColorScheme.fromSeed(
+                  seedColor: Palette.kToDark, brightness: Brightness.dark)
+              .copyWith(primary: Palette.kToDark),
           textTheme: GoogleFonts.bitterTextTheme()),
       initialRoute: "/",
       onGenerateRoute: OnGenerateRoute.route,
       routes: {
         "/": (context) {
           // return const ForgotPasswordPage();
-          return const LoginPage();
+          return const HomePage();
         }
       },
     );
