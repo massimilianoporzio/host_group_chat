@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:host_group_chat/core/extensions/string_extension.dart';
+import 'package:host_group_chat/core/extensions/textstyle_extension.dart';
 
 import '../../../../core/presentation/theme/style.dart';
 

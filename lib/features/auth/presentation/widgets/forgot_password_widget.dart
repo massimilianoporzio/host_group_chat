@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:host_group_chat/core/constants.dart';
-import 'package:host_group_chat/core/extensions/string_extension.dart';
+import 'package:host_group_chat/core/extensions/textstyle_extension.dart';
 
 class ForgotPasswordWidget extends StatelessWidget {
   const ForgotPasswordWidget({super.key});
