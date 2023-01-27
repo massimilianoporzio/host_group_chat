@@ -8,7 +8,8 @@ import 'package:host_group_chat/core/presentation/widgets/header_widget.dart';
 import 'package:host_group_chat/features/auth/presentation/widgets/profile_widget.dart';
 
 import '../../../../core/presentation/theme/style.dart';
-import '../widgets/text_field_input_widget.dart';
+
+import '../../../../core/presentation/widgets/text_field_input_widget.dart';
 import '../widgets/text_field_password_widget.dart';
 
 class RegisterPage extends StatefulWidget {

@@ -4,9 +4,9 @@ import 'package:host_group_chat/features/auth/presentation/widgets/auth_row_widg
 import 'package:host_group_chat/core/presentation/widgets/background_widget.dart';
 import 'package:host_group_chat/core/presentation/widgets/container_button_widget.dart';
 import 'package:host_group_chat/features/auth/presentation/pages/login_page.dart';
-import 'package:host_group_chat/features/auth/presentation/widgets/text_field_input_widget.dart';
 
 import '../../../../core/presentation/widgets/header_widget.dart';
+import '../../../../core/presentation/widgets/text_field_input_widget.dart';
 
 class ForgotPasswordPage extends StatefulWidget {
   const ForgotPasswordPage({super.key});

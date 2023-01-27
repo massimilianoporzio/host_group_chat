@@ -8,9 +8,10 @@ import 'package:host_group_chat/core/presentation/widgets/background_widget.dart
 import 'package:host_group_chat/core/presentation/widgets/container_button_widget.dart';
 
 import 'package:host_group_chat/features/auth/presentation/widgets/forgot_password_widget.dart';
-import 'package:host_group_chat/features/auth/presentation/widgets/text_field_input_widget.dart';
+
 import 'package:host_group_chat/features/auth/presentation/widgets/text_field_password_widget.dart';
 
+import '../../../../core/presentation/widgets/text_field_input_widget.dart';
 import '../widgets/auth_row_widget.dart';
 import '../../../../core/presentation/widgets/header_widget.dart';
 
