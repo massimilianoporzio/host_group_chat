@@ -14,13 +14,14 @@ class SingleItemUserWidget extends StatelessWidget {
           Row(
             children: [
               Container(
+                alignment: Alignment.center,
                 height: 55,
                 width: 55,
                 decoration: BoxDecoration(
                   color: Colors.grey,
                   borderRadius: BorderRadius.circular(50),
                 ),
-                child: Text(""),
+                child: Text("foto"),
               ),
               const SizedBox(
                 width: 10,
