@@ -10,4 +10,5 @@ abstract class FirebaseRepository {
   Future<void> googleAuth();
   Future<void> getUpdateUser(UserEntity user);
   Future<void> getCreateCurrentUser(UserEntity user);
+  Future<String> getCurrentUserId();
 }
