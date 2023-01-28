@@ -30,7 +30,10 @@ class GroupsPage extends StatelessWidget {
                 itemCount: 10,
                 itemBuilder: (context, index) {
                   return SingleItemGroupWidget(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.of(context)
+                          .pushNamed(PageConst.singleChatRouteName);
+                    },
                   );
                 },
               ),

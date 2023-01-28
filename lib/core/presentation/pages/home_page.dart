@@ -8,7 +8,7 @@ import 'package:host_group_chat/features/user/presentation/pages/users_page.dart
 import 'package:host_group_chat/features/chat/presentation/widgets/custom_toolbar_widget.dart';
 import 'package:host_group_chat/features/user/presentation/pages/profile_page.dart';
 
-import '../../../../core/presentation/widgets/text_field_input_widget.dart';
+import '../widgets/text_field_input_widget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
