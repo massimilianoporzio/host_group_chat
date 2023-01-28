@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "/": (context) {
           // return const ForgotPasswordPage();
-          return const HomePage();
+          return const LoginPage();
         }
       },
     );
