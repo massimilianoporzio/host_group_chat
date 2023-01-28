@@ -85,7 +85,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 onPressed: () {
                   _moveUp();
                 },
-                child: RotatedBox(
+                child: const RotatedBox(
                     quarterTurns: 1, child: Icon(Icons.chevron_left)),
               ),
             ),
@@ -97,7 +97,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 onPressed: () {
                   _moveDown();
                 },
-                child: RotatedBox(
+                child: const RotatedBox(
                     quarterTurns: 3, child: Icon(Icons.chevron_left)),
               ),
             )
@@ -192,7 +192,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   const SizedBox(
                     height: 40,
                   ),
-                  ContainerButtonWidget(text: "Aggiorna il Profilo")
+                  ContainerButtonWidget(text: "Aggiorna il Profilo"),
                 ],
               ),
             ),

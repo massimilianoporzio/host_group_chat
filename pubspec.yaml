@@ -46,6 +46,7 @@ dependencies:
   flutter_social_button: ^1.1.4
   flutter_svg: ^1.1.6
   fluttertoast: ^8.1.2
+  font_awesome_flutter: ^9.2.0
   get_it: ^7.2.0
   google_fonts: ^3.0.1
   google_sign_in: ^5.4.3

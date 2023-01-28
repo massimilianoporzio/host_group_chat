@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_icons_null_safety/flutter_icons_null_safety.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:host_group_chat/core/presentation/theme/style.dart';
 
 class InputMessageTextField extends StatefulWidget {
@@ -50,8 +52,8 @@ class _InputMessageTextFieldState extends State<InputMessageTextField> {
                     const SizedBox(
                       width: 10,
                     ),
-                    const Icon(
-                      Icons.insert_emoticon,
+                    const FaIcon(
+                      FontAwesomeIcons.solidLaughBeam,
                     ),
                     const SizedBox(
                       width: 10,
@@ -75,7 +77,7 @@ class _InputMessageTextFieldState extends State<InputMessageTextField> {
                     const SizedBox(
                       width: 4,
                     ),
-                    Icon(Icons.link),
+                    Icon(Icons.attachment),
                     const SizedBox(
                       width: 4,
                     ),

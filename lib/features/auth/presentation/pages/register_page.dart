@@ -9,6 +9,7 @@ import 'package:host_group_chat/features/auth/presentation/widgets/profile_widge
 
 import '../../../../core/presentation/theme/style.dart';
 
+import '../../../../core/presentation/widgets/privacy_and_terms_widget.dart';
 import '../../../../core/presentation/widgets/text_field_input_widget.dart';
 import '../widgets/text_field_password_widget.dart';
 
@@ -164,42 +165,8 @@ class _RegisterPageState extends State<RegisterPage> {
                   const SizedBox(
                     height: 10,
                   ),
-                  Wrap(
-                    alignment: WrapAlignment.center,
-                    children: [
-                      const Text(
-                        "*clicando 'registrati' acconsenti alla ",
-                        style: TextStyle(color: Colors.white70, fontSize: 12),
-                      ),
-                      InkWell(
-                        onTap: () {
-                          //TODO naviga alla privacy policy
-                        },
-                        child: const Text(
-                          "Privacy Policy",
-                          style: TextStyle(
-                              color: Palette.kToDark,
-                              fontWeight: FontWeight.w600,
-                              fontSize: 12),
-                        ),
-                      ),
-                      const Text(
-                        " ed ai ",
-                        style: TextStyle(color: Colors.white70, fontSize: 12),
-                      ),
-                      InkWell(
-                        onTap: () {
-                          //TODO naviga ai termini d'uso
-                        },
-                        child: const Text(
-                          "Termini d'uso",
-                          style: TextStyle(
-                              color: Palette.kToDark,
-                              fontWeight: FontWeight.w600,
-                              fontSize: 12),
-                        ),
-                      ),
-                    ],
+                  const PrivacyPolicyTermsWidget(
+                    testo: 'Registrati',
                   )
                 ],
               ),
