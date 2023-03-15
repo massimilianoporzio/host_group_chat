@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -28,10 +25,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -49,6 +43,15 @@ class DefaultFirebaseOptions {
     }
   }
 
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyDUYLWegyR4BIjblCgBIOuL5qZu9UaugFM',
+    appId: '1:32486607993:web:bc6f2fca868cf5d58858a8',
+    messagingSenderId: '32486607993',
+    projectId: 'group-chat-f0b65',
+    authDomain: 'group-chat-f0b65.firebaseapp.com',
+    storageBucket: 'group-chat-f0b65.appspot.com',
+  );
+
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyCd22egJgjj_IiX54WLkRV8bk5sv1YOG3Q',
     appId: '1:32486607993:android:aee520011e2153dd8858a8',
@@ -63,8 +66,19 @@ class DefaultFirebaseOptions {
     messagingSenderId: '32486607993',
     projectId: 'group-chat-f0b65',
     storageBucket: 'group-chat-f0b65.appspot.com',
-    androidClientId: '32486607993-a9mm4gun8d4a6n2qsvsmelmoab8k7p6v.apps.googleusercontent.com',
+    androidClientId: '32486607993-9aig8mqauojb126nshjknv9evg24ovks.apps.googleusercontent.com',
     iosClientId: '32486607993-a2798h9mcbqq2ailralcou0f7kmkovhq.apps.googleusercontent.com',
     iosBundleId: 'com.massimilianoporzio.hostGroupChat',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyA-lfMGba6oSyJpN8c_SKMiIuyru25sCyg',
+    appId: '1:32486607993:ios:fa072f7edcf79edf8858a8',
+    messagingSenderId: '32486607993',
+    projectId: 'group-chat-f0b65',
+    storageBucket: 'group-chat-f0b65.appspot.com',
+    androidClientId: '32486607993-9aig8mqauojb126nshjknv9evg24ovks.apps.googleusercontent.com',
+    iosClientId: '32486607993-p90b80jq6id5pdgqtmdn9uslf92taq44.apps.googleusercontent.com',
+    iosBundleId: 'com.example.hostGroupChat',
   );
 }

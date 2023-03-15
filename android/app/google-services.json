@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "32486607993-9aig8mqauojb126nshjknv9evg24ovks.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.massimilianoporzio.group_host_chat",
+            "certificate_hash": "9209e786b453b57c03f60f27c479dbb4cad93998"
+          }
+        },
+        {
           "client_id": "32486607993-a9mm4gun8d4a6n2qsvsmelmoab8k7p6v.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -22,7 +30,7 @@
           }
         },
         {
-          "client_id": "32486607993-q61gb45sochbo1dusjgmgf7ungg7d5cv.apps.googleusercontent.com",
+          "client_id": "32486607993-h9f51tjbipcsrgocr4gn7fhi8s52bghq.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -35,7 +43,7 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "32486607993-q61gb45sochbo1dusjgmgf7ungg7d5cv.apps.googleusercontent.com",
+              "client_id": "32486607993-h9f51tjbipcsrgocr4gn7fhi8s52bghq.apps.googleusercontent.com",
               "client_type": 3
             },
             {
