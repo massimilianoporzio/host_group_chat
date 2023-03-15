@@ -1,4 +1,4 @@
-import '../../../user/domain/entities/user_entity.dart';
+import '../../../profile/domain/entities/user_entity.dart';
 
 abstract class FirebaseRemoteDS {
   //Credential Section

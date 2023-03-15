@@ -1,4 +1,4 @@
-import 'package:host_group_chat/features/user/domain/entities/user_entity.dart';
+import '../../../profile/domain/entities/user_entity.dart';
 
 abstract class FirebaseRepository {
   //Credential Section

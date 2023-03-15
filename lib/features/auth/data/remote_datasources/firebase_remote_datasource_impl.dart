@@ -3,7 +3,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:host_group_chat/features/auth/data/models/user_model.dart';
 import 'package:host_group_chat/features/auth/data/remote_datasources/firebase_remote_datasource.dart';
-import 'package:host_group_chat/features/user/domain/entities/user_entity.dart';
+
+import '../../../profile/domain/entities/user_entity.dart';
 
 class FirebaseRemoteDataSourceImpl implements FirebaseRemoteDS {
   final FirebaseFirestore firestore;

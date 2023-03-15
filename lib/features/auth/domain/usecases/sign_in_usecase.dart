@@ -1,5 +1,6 @@
 import 'package:host_group_chat/features/auth/domain/repositories/firebase_repository.dart';
-import 'package:host_group_chat/features/user/domain/entities/user_entity.dart';
+
+import '../../../profile/domain/entities/user_entity.dart';
 
 class SignInUseCase {
   final FirebaseRepository repository;
