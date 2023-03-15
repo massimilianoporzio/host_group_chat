@@ -78,7 +78,7 @@ class FirebaseRemoteDataSourceImpl implements FirebaseRemoteDS {
   @override
   Future<void> signIn(UserEntity user) async {
     await auth.signInWithEmailAndPassword(
-        email: user.email!, password: user.password!);
+        email: user.email, password: user.password);
   }
 
   @override
@@ -87,6 +87,6 @@ class FirebaseRemoteDataSourceImpl implements FirebaseRemoteDS {
   @override
   Future<void> signUp(UserEntity user) async {
     await auth.createUserWithEmailAndPassword(
-        email: user.email!, password: user.password!);
+        email: user.email, password: user.password);
   }
 }
