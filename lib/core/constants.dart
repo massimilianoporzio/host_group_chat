@@ -8,6 +8,8 @@ class AppConst {
 
 class PageConst {
   static const String forgotPageRouteName = "/forgotPassword";
-  static const String loginPageRouteName = "/loginPage";
-  static const String registerPageRouteName = "/registerPage";
+  static const String loginPageRouteName = "/login";
+  static const String registerPageRouteName = "/registerUser";
+  static const String createNewGroupRouteName = "/createNewGroup";
+  static const String singleChatRouteName = "/singleChat";
 }
